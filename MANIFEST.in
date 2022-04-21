@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include souvenir_form *.css
+recursive-include souvenir_form *.csv
+recursive-include souvenir_form *.html
+recursive-include souvenir_form *.ico
+recursive-include souvenir_form *.js
+recursive-include souvenir_form *.json
+recursive-include souvenir_form *.md
+recursive-include souvenir_form *.png
+recursive-include souvenir_form *.py
+recursive-include souvenir_form *.svg
+recursive-include souvenir_form *.txt
+recursive-exclude souvenir_form *.pyc

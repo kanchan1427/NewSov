@@ -1,0 +1,266 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-04-20 21:26:49.721900",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "fathers_name",
+  "mothers_name",
+  "university_roll_no",
+  "college_roll_no",
+  "address",
+  "naming_series",
+  "column_break_8",
+  "date_of_birth",
+  "gender",
+  "branch",
+  "contact_no",
+  "email",
+  "image",
+  "for_self",
+  "comment",
+  "friend_1s_info",
+  "friend_1s_name",
+  "friend_1s_branch",
+  "friend_1s_crn",
+  "column_break_21",
+  "friend_1s_urn",
+  "comment_1",
+  "friend_2s_info",
+  "friend_2s__name",
+  "friend_2s_branch",
+  "friend_2s_crn",
+  "column_break_28",
+  "friend_2s_urn",
+  "comment_2",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route"
+  },
+  {
+   "fieldname": "fathers_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Father's Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mothers_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mother's Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "university_roll_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "University Roll no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "college_roll_no",
+   "fieldtype": "Data",
+   "label": "College Roll No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "EDU-SOV-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Select",
+   "label": "Branch",
+   "options": "Computer Science Engineering\nInformation Technology\nCivil Engineering\nElectrical Engineering\nElectronics Communication Engg.\nMechanical Engineering",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Data",
+   "label": "Contact No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "for_self",
+   "fieldtype": "Section Break",
+   "label": "For Self"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Small Text",
+   "label": "Comment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "friend_1s_info",
+   "fieldtype": "Section Break",
+   "label": " Friend 1's Info"
+  },
+  {
+   "fieldname": "friend_1s_name",
+   "fieldtype": "Data",
+   "label": "Friend 1's Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "friend_1s_branch",
+   "fieldtype": "Select",
+   "label": "Friend 1's Branch",
+   "options": "Computer Science Engineering\nInformation Technology\nCivil Engineering\nElectrical Engineering\nElectronics Communication Engg.\nMechanical Engineering",
+   "reqd": 1
+  },
+  {
+   "fieldname": "friend_1s_crn",
+   "fieldtype": "Data",
+   "label": "Friend 1's CRN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "friend_1s_urn",
+   "fieldtype": "Data",
+   "label": "Friend 1's URN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comment_1",
+   "fieldtype": "Small Text",
+   "label": "Comment 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "friend_2s_info",
+   "fieldtype": "Section Break",
+   "label": " Friend 2's Info"
+  },
+  {
+   "fieldname": "friend_2s__name",
+   "fieldtype": "Data",
+   "label": "Friend 2's  Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "friend_2s_branch",
+   "fieldtype": "Select",
+   "label": "Friend 2's Branch",
+   "options": "Computer Science Engineering\nInformation Technology\nCivil Engineering\nElectrical Engineering\nElectronics Communication Engg.\nMechanical Engineering",
+   "reqd": 1
+  },
+  {
+   "fieldname": "friend_2s_crn",
+   "fieldtype": "Data",
+   "label": "Friend 2's CRN ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "friend_2s_urn",
+   "fieldtype": "Data",
+   "label": "Friend 2's URN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comment_2",
+   "fieldtype": "Small Text",
+   "label": "Comment 2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "published",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Published"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-20 21:57:36.392267",
+ "modified_by": "Administrator",
+ "module": "Souvenir_Form",
+ "name": "Souvenir",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
