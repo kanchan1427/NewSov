@@ -45,8 +45,7 @@
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name",
-   "reqd": 1
+   "label": "Name"
   },
   {
    "fieldname": "route",
@@ -58,34 +57,29 @@
    "fieldname": "fathers_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Father's Name",
-   "reqd": 1
+   "label": "Father's Name"
   },
   {
    "fieldname": "mothers_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Mother's Name",
-   "reqd": 1
+   "label": "Mother's Name"
   },
   {
    "fieldname": "university_roll_no",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "University Roll no",
-   "reqd": 1
+   "label": "University Roll no"
   },
   {
    "fieldname": "college_roll_no",
    "fieldtype": "Data",
-   "label": "College Roll No",
-   "reqd": 1
+   "label": "College Roll No"
   },
   {
    "fieldname": "address",
    "fieldtype": "Small Text",
-   "label": "Address",
-   "reqd": 1
+   "label": "Address"
   },
   {
    "fieldname": "naming_series",
@@ -101,41 +95,35 @@
   {
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
-   "label": "Date of Birth",
-   "reqd": 1
+   "label": "Date of Birth"
   },
   {
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "Gender",
-   "options": "Male\nFemale\nOthers",
-   "reqd": 1
+   "options": "Male\nFemale\nOthers"
   },
   {
    "fieldname": "branch",
    "fieldtype": "Select",
    "label": "Branch",
-   "options": "Computer Science Engineering\nInformation Technology\nCivil Engineering\nElectrical Engineering\nElectronics Communication Engg.\nMechanical Engineering",
-   "reqd": 1
+   "options": "Computer Science Engineering\nInformation Technology\nCivil Engineering\nElectrical Engineering\nElectronics Communication Engg.\nMechanical Engineering"
   },
   {
    "fieldname": "contact_no",
    "fieldtype": "Data",
-   "label": "Contact No.",
-   "reqd": 1
+   "label": "Contact No."
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email",
-   "options": "Email",
-   "reqd": 1
+   "options": "Email"
   },
   {
    "fieldname": "image",
    "fieldtype": "Attach Image",
-   "label": "Image",
-   "reqd": 1
+   "label": "Image"
   },
   {
    "fieldname": "for_self",
@@ -145,8 +133,7 @@
   {
    "fieldname": "comment",
    "fieldtype": "Small Text",
-   "label": "Comment",
-   "reqd": 1
+   "label": "Comment"
   },
   {
    "fieldname": "friend_1s_info",
@@ -156,21 +143,18 @@
   {
    "fieldname": "friend_1s_name",
    "fieldtype": "Data",
-   "label": "Friend 1's Name",
-   "reqd": 1
+   "label": "Friend 1's Name"
   },
   {
    "fieldname": "friend_1s_branch",
    "fieldtype": "Select",
    "label": "Friend 1's Branch",
-   "options": "Computer Science Engineering\nInformation Technology\nCivil Engineering\nElectrical Engineering\nElectronics Communication Engg.\nMechanical Engineering",
-   "reqd": 1
+   "options": "Computer Science Engineering\nInformation Technology\nCivil Engineering\nElectrical Engineering\nElectronics Communication Engg.\nMechanical Engineering"
   },
   {
    "fieldname": "friend_1s_crn",
    "fieldtype": "Data",
-   "label": "Friend 1's CRN",
-   "reqd": 1
+   "label": "Friend 1's CRN"
   },
   {
    "fieldname": "column_break_21",
@@ -179,14 +163,12 @@
   {
    "fieldname": "friend_1s_urn",
    "fieldtype": "Data",
-   "label": "Friend 1's URN",
-   "reqd": 1
+   "label": "Friend 1's URN"
   },
   {
    "fieldname": "comment_1",
    "fieldtype": "Small Text",
-   "label": "Comment 1",
-   "reqd": 1
+   "label": "Comment 1"
   },
   {
    "fieldname": "friend_2s_info",
@@ -196,21 +178,18 @@
   {
    "fieldname": "friend_2s__name",
    "fieldtype": "Data",
-   "label": "Friend 2's  Name ",
-   "reqd": 1
+   "label": "Friend 2's  Name "
   },
   {
    "fieldname": "friend_2s_branch",
    "fieldtype": "Select",
    "label": "Friend 2's Branch",
-   "options": "Computer Science Engineering\nInformation Technology\nCivil Engineering\nElectrical Engineering\nElectronics Communication Engg.\nMechanical Engineering",
-   "reqd": 1
+   "options": "Computer Science Engineering\nInformation Technology\nCivil Engineering\nElectrical Engineering\nElectronics Communication Engg.\nMechanical Engineering"
   },
   {
    "fieldname": "friend_2s_crn",
    "fieldtype": "Data",
-   "label": "Friend 2's CRN ",
-   "reqd": 1
+   "label": "Friend 2's CRN "
   },
   {
    "fieldname": "column_break_28",
@@ -219,14 +198,12 @@
   {
    "fieldname": "friend_2s_urn",
    "fieldtype": "Data",
-   "label": "Friend 2's URN",
-   "reqd": 1
+   "label": "Friend 2's URN"
   },
   {
    "fieldname": "comment_2",
    "fieldtype": "Small Text",
-   "label": "Comment 2",
-   "reqd": 1
+   "label": "Comment 2"
   },
   {
    "fieldname": "published",
@@ -237,7 +214,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-20 21:57:36.392267",
+ "modified": "2022-04-21 20:15:01.631140",
  "modified_by": "Administrator",
  "module": "Souvenir_Form",
  "name": "Souvenir",
