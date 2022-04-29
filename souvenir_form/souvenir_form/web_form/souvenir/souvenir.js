@@ -1,4 +1,46 @@
 frappe.ready(function () {
+
+    frappe.web_form.after_load = () => {
+
+        frappe.call({
+			method: "souvenir_form.souvenir_form.web_form.souvenir.souvenir.get_email",
+            args:{"user": frappe.session.user },
+			callback: (data) => {
+				if (data.message) {
+                    
+                    frappe.web_form.set_value("email",data.message)
+                 
+	                
+				}
+			}
+		});
+
+        frappe.call({
+			method: "souvenir_form.souvenir_form.web_form.souvenir.souvenir.get_full_user_name",
+            args:{"user": frappe.session.user },
+			callback: (data) => {
+				if (data.message) {
+                    frappe.msgprint(`Welcome ${data.message}`)
+                    frappe.web_form.set_value("name1",data.message)
+	                
+				}
+			}
+		});
+
+        frappe.call({
+			method: "souvenir_form.souvenir_form.web_form.souvenir.souvenir.get_contact_no",
+            args:{"user": frappe.session.user },
+			callback: (data) => {
+				if (data.message) {
+                    
+                    frappe.web_form.set_value("contact_no",data.message)
+	                
+				}
+			}
+		});
+
+    
+
     frappe.msgprint('Please fill all values carefully');
 
 
@@ -6,7 +48,7 @@ frappe.ready(function () {
     frappe.web_form.validate = () => {
 
         let data = frappe.web_form.get_values();
-        console.log(data)
+     
         var re = /^[A-Za-z]+$/;
 
         if (data.university_roll_no.toString().length > 7 || data.university_roll_no.toString().length < 7) {
@@ -62,13 +104,6 @@ frappe.ready(function () {
 
     }
 
+}
 
 })
-
-
-
-
-
-
-
-
