@@ -29,16 +29,12 @@ def get_full_user_name(user = None):
 	s = s.join(p)
 	return s
 
-@frappe.whitelist()	
-def get_contact_no(user = None):
-	p = frappe.db.get_value("User", user, "mobile_no")
-	return p
 
 @frappe.whitelist()
-def get_email(user = None):
-	p = frappe.db.get_value("User", user, "email")
+def get_detail(user = None):
+	p = frappe.db.get_value("User", user, ["email","user_image","mobile_no","birth_date","gender","location"])
 	return p	
-    
+        
 
 
 
