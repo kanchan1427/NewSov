@@ -23,16 +23,8 @@ def get_context(context):
     pass
 
 @frappe.whitelist()
-def get_full_user_name(user = None):
-	p = frappe.db.get_value("User", user,["first_name","middle_name","last_name"])
-	s = " "
-	s = s.join(p)
-	return s
-
-
-@frappe.whitelist()
 def get_detail(user = None):
-	p = frappe.db.get_value("User", user, ["email","user_image","mobile_no","birth_date","gender","location"])
+	p = frappe.db.get_value("User", user, ["email","user_image","mobile_no","birth_date","gender","location","full_name"])
 	return p	
         
 
