@@ -1,7 +1,7 @@
 frappe.ready(function () {
 
     frappe.web_form.after_load = () => {
-        
+
         frappe.call({
 			method: "souvenir_form.souvenir_form.web_form.souvenir.souvenir.get_detail",
             args:{"user": frappe.session.user },
@@ -30,14 +30,6 @@ frappe.ready(function () {
 
         let data = frappe.web_form.get_values();
 
-        // Start
-        let img = image
-
-        img.src = data.image
-        let width = img.clientWidth;
-        let height = img.clientHeight;
-        frappe.msgprint("Original width=" + width + ", " + "Original height=" + height);    
-// End
 
         var re = /^[A-Za-z]+$/;
 
