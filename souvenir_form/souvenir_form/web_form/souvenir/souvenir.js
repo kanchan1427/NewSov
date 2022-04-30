@@ -1,39 +1,26 @@
 frappe.ready(function () {
 
     frappe.web_form.after_load = () => {
-
-        frappe.call({
-			method: "souvenir_form.souvenir_form.web_form.souvenir.souvenir.get_full_user_name",
-            args:{"user": frappe.session.user },
-			callback: (data) => {
-				if (data.message) {
-                    frappe.msgprint(`Welcome ${data.message}`)
-                    frappe.msgprint('Please fill all values carefully');
-                    frappe.web_form.set_value("name1",data.message)
-	                
-				}
-			}
-		});
-
-
+        
         frappe.call({
 			method: "souvenir_form.souvenir_form.web_form.souvenir.souvenir.get_detail",
             args:{"user": frappe.session.user },
 			callback: (data) => {
 				if (data.message) {
-
+                        frappe.msgprint(`Please Fill the Form carefully  ${data.message[6]}`)
                         frappe.web_form.set_value("email",data.message[0])
                         frappe.web_form.set_value("image",data.message[1])
                         frappe.web_form.set_value("contact_no",data.message[2])
                         frappe.web_form.set_value("date_of_birth",data.message[3])
                         frappe.web_form.set_value("gender",data.message[4])
                         frappe.web_form.set_value("address",data.message[5])
-
+                        frappe.web_form.set_value("name1",data.message[6])
 				}
 			}
 		});
 
     
+
 
   
 
@@ -42,11 +29,21 @@ frappe.ready(function () {
     frappe.web_form.validate = () => {
 
         let data = frappe.web_form.get_values();
-     
+
+        // Start
+        let img = image
+
+        img.src = data.image
+        let width = img.clientWidth;
+        let height = img.clientHeight;
+        frappe.msgprint("Original width=" + width + ", " + "Original height=" + height);    
+// End
+
         var re = /^[A-Za-z]+$/;
 
         if (data.university_roll_no.toString().length > 7 || data.university_roll_no.toString().length < 7) {
             frappe.throw('Please Enter a Valid University Roll No.');
+          
             return false;
         }
         
