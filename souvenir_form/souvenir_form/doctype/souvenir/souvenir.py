@@ -6,5 +6,8 @@ from frappe.model.document import Document
 
 class Souvenir(Document):
 	pass
-	# def before_save(self):
-	# 	self.name1 = frappe.db.get_value("User",{"name":frappe.session.user},"full_name")
+
+@frappe.whitelist()
+def get_detail(user = None):
+	p = frappe.db.get_value("User", user, ["email","user_image","mobile_no","birth_date","gender","location","full_name"])
+	return p		
