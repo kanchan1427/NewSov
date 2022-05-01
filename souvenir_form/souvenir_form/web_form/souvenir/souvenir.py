@@ -27,7 +27,11 @@ def get_detail(user = None):
 	p = frappe.db.get_value("User", user, ["email","user_image","mobile_no","birth_date","gender","location","full_name"])
 	return p	
         
-
+@frappe.whitelist()
+def get_detail(user = None):
+	p = frappe.db.get_value("Souvenir", user, ["email","image","contact_no","date_of_birth","gender","address","name1"])
+	return p	
+        
 
 
 
