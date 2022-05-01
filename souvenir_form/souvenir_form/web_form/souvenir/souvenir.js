@@ -1,11 +1,12 @@
 frappe.ready(function () {
 
-    frappe.msgprint(`Please Fill the Form carefully `)
+
 
     frappe.web_form.after_load = () => {
 
         let data = frappe.web_form.get_values();
-        if( data.image,data.email, data.date_of_birth ,data.gender ,data.name1 ,data.address ,data.image == null){
+        if( !data ){
+            frappe.msgprint(`Please Fill the Form carefully `)
             frappe.call({
                 method: "souvenir_form.souvenir_form.web_form.souvenir.souvenir.get_detail",
                 args:{"user": frappe.session.user },
@@ -28,7 +29,7 @@ frappe.ready(function () {
         else{
 
             frappe.call({
-                method: "souvenir_form.souvenir_form.web_form.souvenir.souvenir.get_detail",
+                method: "souvenir_form.souvenir_form.web_form.souvenir.souvenir.get_details",
                 args:{"user": frappe.session.user },
                 callback: (data) => {
                     if (data.message) {
